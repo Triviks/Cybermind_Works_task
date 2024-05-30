@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.App {
+  height: 100vh;
+  padding: 5px;
+  /* border-radius: 20px; */
+}
+
+.modal_container {
+  height: fit-content;
+  max-width: 425px;
+  /* width: 320px; */
+  margin: auto;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.event_details {
+  gap: 10px;
+}
+
+.event_name {
+  width: 100%;
+  border-radius: 20px;
+  height: 44px;
+  border: 1px solid #CECECE;
+  color: #E92C2C;
+  padding: 10px 20px;
+  font-family: 'Inter', 'Sans-serif';
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.2px;
+  text-align: left;
+  background-color: transparent;
+}
+
+.event_date {
+  width: 100%;
+  border-radius: 20px;
+  height: 37.72px;
+  padding: 11.04px 18.4px;
+  border: 1px solid #CECECE;
+}
+
+.event_date_input, .custom_date_class {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15.59px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.react-datepicker {
+  font-family: "Inter" !important;
+  z-index: 1 !important;
+  margin-top: 200px;
+  margin-left: -10px;
+}
+
+.assign_person {
+  cursor: pointer;
+  width: 162.45px;
+  height: 45px;
+  border: 1px solid #EDEDED;
+  border-radius: 25px;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.dropdown {
+  border: 1px solid #EDEDED;
+  border-radius: 25px;
+  /* width: 162.45px; */
+  padding: 10px 5px;
+  padding-left: 0px !important;
+  padding-bottom: 0px !important;
+  position: absolute !important;
+  top: 120% !important;
+  left: -5% !important;
+  z-index: 1;
+  background-color: white;
+}
+
+.dropdown ul {
+  list-style-type: none;
+  padding-left: 5px !important;
+}
+
+.dropdown ul li {
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-bottom: 8px; 
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 600;
+  color: #5A5A5A;
+  border: 1px solid #EDEDED;
+  border-radius: 25px;
+  background-color: white;
+  width: 162.45px;
+  height: 45px;
+}
+
+.dropdown ul li:hover {
+  background-color: rgb(230, 218, 218);
+}
+
+.user_img {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+
+.event_notes_input {
+  outline: none;
+  border: 1px solid #EDEDED;
+  background-color: transparent;
+  border-radius: 12px;
+  padding: 5px 10px;
+  width: 190.73px;
+  height: 44px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  letter-spacing: -0.02em;
+  color: #5A5A5A;
+  resize: none;
+  overflow: auto;
+
+  -ms-overflow-style: none;   
+  scrollbar-width: none;   
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.comments .heading {
+  font-family: Inter;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 16.94px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #5A5A5A;
+}
+
+.comments .username {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14.52px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #009379;
+}
+
+.comments .comment {
+  font-family: Inter;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13.31px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #5A5A5A;
+  padding-right: 10px;
+}
+
+.comments .comment_input_container {
+  width: 95%;
+  height: 43px;
+  padding: 15px;
+  border: 1px solid #E3E3E3;
+  border-radius: 25px;
+}
+
+.comments .comment_input_container input {
+  border: none;
+  outline: none;
+  width: 95%;
+  font-family: Inter;
+  font-size: 11px;
+  font-weight: 400;
+  background-color: transparent;
+}
+
+.comments .comment_input_container input::placeholder {
+  font-family: Inter;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13.31px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #ABABAB;
+} 
+
+/* =================MEDIA QUERIES=============== */
+@media only screen and (max-width: 350px) {
+  .modal_container {
+    width: 320px;
+    padding: 15px;
+  }
+
+  .comments .comment {
+    padding-right: 0px;
+  }
+}
+
+@media only screen and  (max-width: 440px) {
+  .react-datepicker__navigation--next--with-time:not(.react-datepicker__navigation--next--with-today-button) {
+    right: 0px !important;
+  }
+
+  .react-datepicker__month-container {
+    float: none !important;
+  }  
+
+  .react-datepicker__time-container {
+    border-left: none !important;
+  } 
+}
